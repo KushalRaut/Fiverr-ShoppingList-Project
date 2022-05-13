@@ -42,14 +42,14 @@ header hr {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 1.2rem;
-  margin: 0 1rem 0 3rem;
+  margin: 0 7rem 0 3rem;
 }
 
 .section_two form input {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 1rem;
-  height: 1.5rem;
+  padding: 0.2rem;
   border-radius: 2px;
   border: 1px solid gray;
 }
@@ -58,15 +58,261 @@ header hr {
   font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 0.9rem;
-  height: 1.7rem;
+  padding: 0.3rem 0.5rem;
   border-radius: 2px;
   border: 1px solid gray;
   color: rgba(63, 62, 62, 0.836);
-  margin: 0.5rem 0 0 7rem;
+  margin: 0.5rem 0 0 13rem;
   cursor: pointer;
 }
 
 .section_two form button:hover {
+  background-color: #28a745;
+  color: white;
+}
+
+.section_three h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: rgb(223, 129, 6);
+}
+
+.update_section .label-select {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin: 0.5rem 3.1rem 0.5rem 3rem;
+}
+
+.update_section .label-updated {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin: 0.5rem 0.9rem 0.5rem 3rem;
+}
+
+.update_section select {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  border-radius: 2px;
+  border: 1px solid gray;
+  margin: 0.5rem 0;
+  padding: 0.2rem 0;
+  height: auto;
+  width: 14.1rem;
+}
+
+.update_section input {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 0.2rem;
+  border-radius: 2px;
+  border: 1px solid gray;
+}
+
+.section_three .update_section form button {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: 2px;
+  border: 1px solid gray;
+  color: rgba(63, 62, 62, 0.836);
+  margin: 0.5rem 0 0 13rem;
+  cursor: pointer;
+}
+
+.section_three .update_section form button:hover {
   background-color: rgb(100, 100, 100);
   color: white;
+}
+
+.delete_item label {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin: 0 7rem 0 3rem;
+}
+
+.delete_item select {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  border-radius: 2px;
+  border: 1px solid gray;
+  margin: 0.5rem 0;
+  padding: 0.2rem 0;
+  height: auto;
+  width: 14.1rem;
+}
+
+.delete_item button {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+  height: 1.7rem;
+  border-radius: 2px;
+  border: 1px solid gray;
+  color: rgba(63, 62, 62, 0.836);
+  margin: 0.5rem 0 0 13rem;
+  cursor: pointer;
+}
+
+.delete_item button:hover {
+  background-color: #dc3545;
+  color: white;
+}
+
+.section_four h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: rgb(223, 129, 6);
+}
+
+.section_four form button {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+  height: 1.7rem;
+  border-radius: 2px;
+  border: 1px solid #0078d7;
+  color: #0078d7;
+  background-color: #fefdfc;
+  margin: 0.5rem 0 2rem 13rem;
+  padding: 0 1.5rem;
+  cursor: pointer;
+}
+
+.section_four form button:hover {
+  background-color: #0078d7;
+  color: white;
+}
+
+footer hr {
+  border: none;
+  height: 2px;
+  background-color: gray;
+  margin: 0.5rem 0;
+}
+
+footer p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 850px) {
+  body {
+    padding: 2rem 5rem;
+  }
+
+  .section_two form label {
+    margin: 0 5rem 0 3rem;
+  }
+
+  .section_two form button {
+    margin: 0.5rem 0 0 10rem;
+  }
+
+  .update_section .label-select {
+    margin: 0.5rem 3.1rem 0.5rem 3rem;
+  }
+
+  .update_section .label-updated {
+    margin: 0.5rem 0.9rem 0.5rem 3rem;
+  }
+
+  .section_three .update_section form button {
+    margin: 0.5rem 0 0 13rem;
+  }
+
+  .delete_item label {
+    margin: 0 7rem 0 3rem;
+  }
+
+  .delete_item button {
+    margin: 0.5rem 0 0 13rem;
+  }
+  .section_four form button {
+    margin: 0.5rem 0 2rem 13rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 2rem 3rem;
+  }
+
+  .section_two form label {
+    margin: 0 3rem 0 3rem;
+  }
+
+  .section_two form button {
+    margin: 0.5rem 0 0 8rem;
+  }
+
+  .update_section .label-select {
+    margin: 0.5rem 2.5rem 0.5rem 2rem;
+  }
+
+  .update_section .label-updated {
+    margin: 0.5rem 0.9rem 0.5rem 2rem;
+  }
+
+  .section_three .update_section form button {
+    margin: 0.5rem 0 0 8rem;
+  }
+
+  .delete_item label {
+    margin: 0 4rem 0 3rem;
+  }
+
+  .delete_item button {
+    margin: 0.5rem 0 0 7rem;
+  }
+  .section_four form button {
+    margin: 0.5rem 0 2rem 7rem;
+  }
+}
+@media only screen and (max-width: 525px) {
+  body {
+    padding: 2rem 2rem;
+  }
+
+  .section_two form label {
+    margin: 0 3rem 0 1rem;
+  }
+
+  .section_two form button {
+    margin: 0.5rem 0 0 7rem;
+  }
+
+  .update_section .label-select {
+    margin: 0.5rem 2.5rem 0.5rem 1rem;
+  }
+
+  .update_section .label-updated {
+    margin: 0.5rem 0.9rem 0.5rem 0.5rem;
+  }
+
+  .section_three .update_section form button {
+    margin: 0.5rem 0 0 10.5rem;
+  }
+
+  .delete_item label {
+    margin: 0 5.5rem 0 2rem;
+  }
+
+  .delete_item button {
+    margin: 0.5rem 0 0 10.5rem;
+  }
+  .section_four form button {
+    margin: 0.5rem 0 2rem 10rem;
+  }
 }

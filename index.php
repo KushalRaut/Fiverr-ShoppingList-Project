@@ -46,22 +46,11 @@
         
         <!-- Third section of you page will allow users to update or delete items -->
         <section class="section_three">
-            <!-- <?php
-            $update = getUpdateState();
-            echo var_dump($update);
-            setUpdateState();
-            $update = getUpdateState();
-            echo var_dump($update);
-            
-            echo "<button onClick={}></button>";
-
-
-            ?> -->
-
-            <div>
+    
+            <div class="update_section">
             <h2>Update Item:</h2>
             <form action="handleActions.php" method="post">
-                <label for="update_item">Select Item:</label>
+                <label for="update_item" class="label-select">Select Item:</label>
                 <select id="update_item" name="current_update_items">
                 <?php
 
@@ -74,14 +63,14 @@
                 ?>
                 </select>
                 <br/>
-                <label for="updated_text">Updated Name:</label>
+                <label for="updated_text" class="label-updated">Updated Name:</label>
                 <input type="text" name="updated_item" id="updated_item" placeholder="Updated Name" />
                 <br/>
                 <button type="submit" name="update" id="update_item">Update Item</button>
             </form>
             </div>
 
-            <div>
+            <div class="delete_item">
             <h2>Delete Item:</h2>
             <form action="handleActions.php" method="post">
                 <label for="delete_item">Item:</label>
@@ -105,13 +94,16 @@
         
         <!-- Fourth section of you page will allow users to sort the shopping list -->
         <section class="section_four">
+            <h2>Sort Items:</h2>
             <form action="handleActions.php" method="post">
-                <button type="submit" name="sort" id="sort_item">Sort Items</button>
+                <button type="submit" name="sort" id="sort_item">Sort Now</button>
             </form>
         </section>  
     </main>
 
     <footer>
+        <hr />
+        <p>&copy; <?php echo date("Y"); ?> Shopping List Manager</p>
     </footer>
 </body>
 </html>
