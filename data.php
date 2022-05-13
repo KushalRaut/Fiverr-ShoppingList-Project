@@ -1,4 +1,6 @@
 <?php
+
+    // Function to make connection with the Database
     function make_connection()
     {
         $host='localhost';
@@ -66,19 +68,6 @@
     }
 
     // Function to update an item from the database
-    $updateState = false;
-    function getUpdateState()
-    {
-        global $updateState;
-        return $updateState;
-    }
-    function setUpdateState()
-    {   
-        global $updateState;
-        $updateState = true;
-    }
-
-
     function update_item($current_name,$updated_name){
         print($current_name);
         print($updated_name);
@@ -108,6 +97,8 @@
         $con->query($sql);
     }
 
+
+    // Function to sort the items in the database
     function sort_data(){
         $con = make_connection();
         $sql = "SELECT * FROM listitems ORDER BY name";

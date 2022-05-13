@@ -1,5 +1,7 @@
 <?php
     include("data.php");
+
+    // Nested If else to check the Post data and perform actions
     if($_SERVER["REQUEST_METHOD"] == "POST"){
         if(isset($_POST["add"])){
             if($_POST["item"]!=NULL)

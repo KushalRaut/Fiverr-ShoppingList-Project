@@ -1,3 +1,4 @@
+<!-- Using PHP include feature to import the data.php file. -->
 <?php
     include("data.php")
 ?>
@@ -8,17 +9,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping List Manager</title>
+
+    <!-- Adding Css Stylesheet -->
     <style> <?php include 'styles.css'; ?> </style>
+
 </head>
 <body>
+
+    <!-- Website Header -->
     <header>
         <h1>Shopping List Manager</h1>
         <hr />
     </header>
 
+    <!-- Website Body -->
+    <!-- Contains List Item, Add Item, Update, Delete and Sort Item Features -->
+
     <main>
 
-        <!-- First section of you page will display all the list items -->
+        <!-- First section of page will display all the shopping list items -->
         <section class="section_one">
             <h2>Items:</h2>
             <?php
@@ -55,6 +64,8 @@
                 <?php
 
                     $items = get_items();
+
+                    //Using for loop to iterate through the array items
                     for ($x = 0; $x < count($items); $x++) {
                     // Display all the items in a dropdown menu
                         $item_name = $items[$x]->item_name;
