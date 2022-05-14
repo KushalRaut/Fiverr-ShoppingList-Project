@@ -14,6 +14,12 @@
         }
         return $con;
     }
+    function create_table(){
+        $con = make_connection();
+        $sql = "CREATE TABLE IF NOT EXISTS listitems(name VARCHAR(250))";    
+        $con->query($sql);
+    }
+    create_table();
 
     // Creating a data structure to store values from the database
     class list_item
